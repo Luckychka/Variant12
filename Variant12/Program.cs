@@ -33,6 +33,12 @@
             Console.WriteLine("Попытка задать отрицательное количество:");
             tovar1.Kolichestvo = -5;
 
+            // --- Третий объект через конструктор с параметрами ---
+            Tovar tovar3 = new Tovar("Масло", 30, 120.0f);
+            Console.WriteLine("\nТретий объект (конструктор с параметрами):");
+            tovar3.PrintInfo();
+            Console.WriteLine($"Общая стоимость: {tovar3.ObshayaStoimost()} руб.");
+
             Console.WriteLine("\nНажмите любую клавишу для выхода...");
             Console.ReadKey();
         }
